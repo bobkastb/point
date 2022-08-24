@@ -1,0 +1,47 @@
+{
+  "name": "point-client",
+  "private": true,
+  "version": "0.0.1",
+  "description": "PO Int client",
+  "main": "index.js",
+  "author": "Boris Telesnin",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "fqr build",
+    "rebuild": "fqr rebuild",
+    "options": "fqr options",
+    "start": "fqr start",
+    "clean": "fqr clean",
+    "wipe": "fqr wipe",
+    "copy2remote": "fqr copy2remote"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "@types/node": "^13.13.4",
+    "faqtor": "^0.2.10",
+    "faqtor-of-browser-sync": "0.0.4",
+    "faqtor-of-rollup": "0.0.5",
+    "faqtor-of-watch": "^0.1.1",
+    "fqr": "0.0.6",
+    "less": "^3.11.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.70.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "shx": "^0.3.2",
+    "toml": "^3.0.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@types/scroll-into-view": "^1.6.7",
+    "flv.js": "^1.5.0",
+    "hyperoop": "^1.0.0",
+    "hyperoop-router": "^0.1.25",
+    "promise-polyfill": "8.1.3",
+    "redoundo": "^0.1.15",
+    "scroll-into-view": "^1.14.2",
+    "whatwg-fetch": "^3.0.0"
+  }
+}

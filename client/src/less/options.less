@@ -1,0 +1,96 @@
+// Модуль options.less содержит:
+// Стили для элементов страницы "Настройки" (страница /#options)
+@import "./const.less";
+
+.options-table {
+    border: 2px solid @nav-background-color;
+    width: 500px;
+    height: 300px;
+    border-collapse: collapse;
+    color: @nav-text-color;
+    font-size: 12px;
+    background-color: @nav-background-color;
+}
+
+.options-table td {
+    vertical-align: top;
+    padding: 20px 20px 20px 20px;
+}
+
+.select-theme {
+    width: 100%;
+    color: @body-text-color;
+    background-color: @base-background-color;
+    border: 2px solid @nav-background-color;
+}
+
+.select-theme * {
+    color: @body-text-color;
+    border: 2px solid @nav-background-color;
+}
+
+.options-parameter-td {
+    width: 250px;
+    background-color: @base-background-color;
+    color: @body-text-color;
+}
+
+.options-folders-ul {
+    overflow: auto;
+    color: @preset-text-color;
+    max-height: 200px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid @nav-background-color;
+}
+
+.options-folders-li {
+    display: block;
+    padding: 5px;
+    color: @preset-text-color;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.options-folders-cap-li {
+    display: block;
+    padding: 5px;
+    color: @nav-text-color;
+    text-decoration: none;
+    background-color: @nav-background-color;
+}
+
+.options-folders-li:hover {
+    background-color: lighten(@base-background-color, 10%);
+}
+
+.options-folders-li:hover .choose-dir-btn-svg {
+    fill-opacity: 0.4;
+}
+
+.options-folders-li:hover .choose-dir-btn {
+    border-radius: 4px;
+    background-color: lighten(@base-background-color, 5%);;
+}
+
+.choose-dir-btn-svg {
+    height: 15px;
+    fill: @preset-text-color;
+    fill-opacity: 0;
+}
+
+.cur-dir-btn-svg {
+    height: 15px;
+    fill: @preset-text-color;
+    fill-opacity: 1;
+}
+
+.choose-dir-btn {
+    float: right;
+    transform: translateY(-3px);
+}

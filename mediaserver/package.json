@@ -1,0 +1,25 @@
+{
+  "name": "point-mediaserver",
+  "private": true,
+  "version": "0.0.1",
+  "description": "PO Int media server",
+  "main": "index.js",
+  "scripts": {
+    "build": "fqr build",
+    "rebuild": "fqr rebuild",
+    "clean": "fqr clean",
+    "wipe": "fqr wipe",
+    "test": "test"
+    ,"copy2remote": "fqr copy2remote"
+  },
+  "author": "Boris Telesnin",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^13.1.8",
+    "faqtor": "^0.2.9",
+    "fqr": "0.0.6",
+    "rimraf": "^3.0.0",
+    "shx": "^0.3.2",
+    "typescript": "^3.7.5"
+  }
+}

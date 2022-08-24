@@ -1,0 +1,20 @@
+# Last time of install $InstallTime
+
+[Unit]
+Description=POInt Serial port Emulator
+
+[Service]
+ExecStart=/usr/bin/nodejs $PO_HOME/index.js
+Restart=always
+User=q
+Environment=NODE_ENV=production
+WorkingDirectory=$PO_HOME
+Before=point-main
+
+Environment=LogInternal=No
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=point-vserial
+
+[Install]
+WantedBy=multi-user.target

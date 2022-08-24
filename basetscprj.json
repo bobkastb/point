@@ -1,0 +1,17 @@
+{
+
+    "compilerOptions": {
+      "target": "es6",
+      "strict": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "outDir": "../assembly/tsc",
+      "rootDirs": ["src", "../genlib" ],
+      "lib": [ "es6","dom" ]
+    }
+
+
+    
+
+}

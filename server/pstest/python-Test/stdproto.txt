@@ -1,0 +1,7 @@
+('--- test srial port --- ', '/dev/ttyS4')
+>> #MODEL? << ~01@MODEL VS-88UHD
+>> #VERSION? << ~01@VERSION 02.01.0002
+>> #PROT-VER? << ~01@PROT-VER 3000:2.12
+>> #SN? << ~01@SN 07200018800005
+>> #BUILD-DATE? << ~01@BUILD-DATE 2019/07/18 11:35:51
+end

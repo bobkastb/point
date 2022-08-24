@@ -1,0 +1,95 @@
+// Модуль sidebar.less содержит:
+// Стили для заголовка главного окна 
+@import "./const.less";
+
+.sidebar-td {
+    width: @sidebar-left-width;
+    background-color: @nav-background-color;
+}
+
+.sidebar-hidden-td {
+    width: 50px;
+    background-color: @nav-background-color;
+}
+
+.sidebar-table {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.sidebar-toggle-hide {
+    .rotate(180);
+}
+
+.sidebar-toggle-icon {
+    height: @sidebar-control-size/2;
+    fill: @nav-text-color;
+    border: 1px solid @nav-text-color;
+    border-radius: 5px;
+    display: block;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.sidebar-toggle-icon:hover {
+    cursor: pointer;
+}
+
+.logo {
+    height: @logo-height;
+}
+
+.sidebar-menu-td {
+    vertical-align: top;
+    border-top: 1px solid @base-background-color;
+}
+
+.sidebar-logo-td {
+    height: @logo-height+20px;
+}
+
+.sidebar-footer-td {
+    height: 20px;
+    color: @nav-text-color;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.main-menu-ul {
+    overflow: auto;
+    color: @nav-text-color;
+    max-height: 630px;
+    padding: 10px;
+}
+
+.main-menu-li {
+    display: block;
+    padding: 5px;
+    line-height: 35px;
+    min-height: 20px;
+}
+
+.main-menu-li-on {
+    &:extend(.presets-li);
+    background-color: lighten(@nav-background-color, 10%)
+}
+
+.main-menu-li a {
+    color: @nav-text-color;
+    text-decoration: none;
+}
+
+.main-menu-icon {
+    height: 30px;
+    fill: @nav-text-color;
+    display: inline-block;
+    transform: translateY(8px);
+}
+
+.switch-theme-icon {
+    height: 30px;
+    fill: @next-theme-color;
+    display: inline-block;
+    transform: translate(7px, 15px);
+}

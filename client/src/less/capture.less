@@ -1,0 +1,49 @@
+// Модуль capture.less содержит:
+// Стили для страницы захвата изображения с сервера  ( страница /#capture )
+
+@import "./const.less";
+
+.capture-btn {
+    height: @cam-controls-width / 3;
+    fill: @nav-text-color;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.capture-btn-inactive {
+    fill: darken(@nav-text-color, 30%);
+}
+
+.captured-video {
+    width: 100%;
+}
+
+.settings-btn {
+    height: @cam-controls-width / 10;
+    fill: @nav-text-color;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.settings-btn-inactive {
+    fill: darken(@nav-text-color, 30%);
+    height: @cam-controls-width / 10;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.close-video-btn {
+    height: @cam-controls-width / 10;
+    //fill: @nav-text-color;
+    fill:  lightgreen;
+    //color: lightgreen;
+    
+}
+/*
+position: fixed;
+margin-top: 20px;
+right: 0px;
+*/
+
+

@@ -1,0 +1,18 @@
+{
+
+    "fpath":"${prgdir}/../vdata",
+    "input":{
+        "1":"signal1",
+        "2":"camera1",
+        "3":"camera2",
+        "4":"static1",
+        "5":"empty",
+        "6":"empty",
+        "7":"empty",
+        "8":"empty"
+    },
+    "output":{
+        "3":"${prgdir}/capture_direct.data"
+    }
+
+}

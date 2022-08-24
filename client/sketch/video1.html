@@ -1,0 +1,14 @@
+<html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/2.5.10/shaka-player.compiled.min.js"></script>
+  <script>
+    function startVideo(mpd) {
+      shaka.polyfill.installAll();
+      var video = document.getElementById('video');
+      var player = new shaka.player.Player(video);
+      var source = new shaka.player.DashVideoSource(mpd, null, null);
+      player.load(source);
+    }
+  </script>
+  <body onLoad="startVideo('stream.mpd');">
+    <video id="video" controls autoplay mute></video>
+  </body>

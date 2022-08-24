@@ -1,0 +1,135 @@
+// Модуль switch.less содержит:
+// Стили для страницы "Расписания записи" (страница /#schedule)
+@import "./const.less";
+
+.switch-top-td {
+    height: 100px;
+    padding: 0 @common-padding 0 @common-padding;
+}
+
+.switch-table-td {
+    padding: 20px 0 20px 0;
+    padding: @common-padding;
+    height: 100%;
+}
+
+.switch-bottom-td {
+    height: 200px;
+    padding: 0 @common-padding 0 @common-padding;
+}
+
+.table-caption {
+    font-size: 20px;
+}
+
+.switch-table {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    color: @nav-text-color;
+    font-size: 12px;
+    //margin-top: 20px;
+    //margin-bottom: 20px;
+}
+
+.switch-table-th {
+    background-color: @nav-background-color;
+    border-bottom: 1px solid @switch-table-border-color;
+}
+
+.switch-table-input-td {
+    border-left: 1px solid @switch-table-border-color;
+    padding: 15px 10px 15px 10px;
+}
+
+.switch-table-row-tr {
+    border: none;
+}
+
+.switch-table-empty-cell {
+    background-color: @base-background-color;
+}
+
+.switch-table-row-start {
+    border: none;
+    padding: 15px 10px 15px 10px;
+    background-color: @nav-background-color; //darken(@row-color-odd, 2%);
+}
+
+.switch-table-row-td {
+    border-left: 1px solid @switch-table-border-color;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.switch-table-row-even {
+    background-color: @row-color-even;
+}
+
+.switch-table-row-odd {
+    background-color: @row-color-odd;
+}
+
+.switch-table-icon {
+    height: 30px;
+    fill: @switch-table-icon-color;
+    display: inline-block;
+}
+
+.switch-afv-button-icon {
+    height: 40px;
+    fill: @nav-text-color;
+    display: inline-block;
+    margin-right: 10px;
+    transform: translateY(5px);
+}
+
+.switch-afv-button-text {
+    display: inline-block; 
+    transform: translateY(-10px);
+}
+
+.switch-error-div {
+    display: inline-block;
+    margin-left: 10px;
+    transform: translateY(5px);
+}
+
+.switch-error-sign {
+    height: 20px;
+}
+
+.switch-warn-div {
+    display: inline-block;    
+    margin-left: 10px;
+    transform: translateY(5px);
+}
+
+.switch-warn-sign {
+    height: 20px;    
+}
+
+.switch-tab-error-div {
+    display: inline-block;    
+    margin-left: 10px;
+    transform: translateY(5px);
+    visibility: hidden;
+}
+
+.switch-table-row-td:hover .switch-tab-error-div {
+    visibility: visible;
+}
+
+.switch-table-indication-on {
+    fill: green;
+    height: 10px;
+    transform: translateX(-50%)
+}
+
+.switch-table-indication-off {
+    fill: red;
+    height: 10px;
+    transform: translateX(-50%)
+}

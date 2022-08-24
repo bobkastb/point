@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>videojs-flvjs Demo</title>
+  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Video.js tech for FLV playback using flv.js</h1>
+  <video id="videojs-flvjs-player" class="video-js" autoplay muted controls width="640" height="480">
+    <source src="http://192.168.77.40:8000/live/video.flv" type='video/x-flv'>
+  </video>
+  <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+  <script src="https://unpkg.com/flv.js/dist/flv.min.js"></script>
+  <script src="https://unpkg.com/videojs-flvjs/dist/videojs-flvjs.min.js"></script>
+  <script>
+    (function(window, videojs) {
+      // Setting the techOrder is necessary in 5.x
+      // In 6.x techs are added automatically
+      var player = window.player = videojs('videojs-flvjs-player', {
+      //  techOrder: ['html5', 'flvjs']
+        flvjs: {
+            mediaDataSource: {
+                isLive: true,
+                cors: true,
+                withCredentials: false
+            },
+            config: {
+                isLive: true,
+                fixAudioTimestampGap: false,
+                autoCleanupSourceBuffer: true
+            }
+        },
+        });
+    }(window, window.videojs));
+  </script>
+</body>
+</html>

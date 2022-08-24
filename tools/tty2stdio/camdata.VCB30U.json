@@ -1,0 +1,66 @@
+{
+ "deviceaddr": 1,
+ "img": {
+  "path": "/opt/stelcs/virtualCOM/tty2stdio/../vdata/camera1",
+  "src": "camfullpano.jpg",
+  "curr": "current.jpg",
+  "Dimsz": [
+   1920,
+   1080
+  ],
+  "//": ""
+ },
+ "limits": {
+  "ZoomPos": [
+   12,
+   16384
+  ],
+  "FocusPos": [
+   0,
+   2000
+  ],
+  "PanTiltPos": [
+   [
+    -8800,
+    8800
+   ],
+   [
+    -2560,
+    2560
+   ]
+  ],
+  "Preset": [
+   0,
+   127
+  ],
+  "//": 0
+ },
+ "data": {
+  "Preset": 0,
+  "PanTiltPos": [
+   986,
+   -561
+  ],
+  "ZoomPos": 339.44,
+  "FocusPos": 0,
+  "FocusAuto": true,
+  "MaxSpeed": [
+   1,
+   8
+  ],
+  "UserTagId": 4660,
+  "Version": [
+   0,
+   32,
+   41,
+   8,
+   1,
+   4,
+   2
+  ],
+  "PanReverse": 1,
+  "TiltReverse": 0,
+  "Power": true,
+  "//": 0
+ }
+}

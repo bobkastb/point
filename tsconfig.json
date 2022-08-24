@@ -1,0 +1,26 @@
+{
+  // Этот конфиг создан только для одной цели - НОРМАЛЬНАЯ работа функции редактора "find All Reference"
+  // но попутно с этим, он наследуется из подчиненных конфигов
+  "compilerOptions": {
+    "target": "es6",
+    "strict": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "outDir": "../assembly/tsc",
+        
+    "rootDirs": ["server/src", "genlib" , "mediaserver/src" , "client/src"  ],
+    "lib": [ "es6","dom" ]
+
+    ,"baseUrl": "."
+    ,"paths":{
+      "@gen_lib/*" : [ "genlib/lib/*" ]
+    },
+
+  },
+
+
+  //"include": ["server/src/**/*.ts","mediaserver/src/**/*.ts","client/src/**/*.tsx", "genlib/lib/*.ts"]
+//"exclude": []
+
+}

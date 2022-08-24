@@ -1,0 +1,66 @@
+// Модуль campreset.less содержит:
+// Стили для контролов управления пресетами камеры  ( страница /#camera )
+
+@import "./const.less";
+
+.presets-td {
+    width: @cam-controls-width;
+    padding: @common-padding 0 @common-padding 0;
+}
+
+.presets-table {
+    width: 100%;
+    height: 100%;
+    background-color: @nav-background-color;
+    border: 0;
+    font-size: 14px;
+}
+
+.presets-btn-td {
+    color: @nav-text-color;
+    text-align: center;
+    height: @cam-controls-width / 3;
+}
+
+.presets-ul-td {
+    background-color: @base-background-color;
+    vertical-align: top;
+    margin: 0 10px 10px 10px;
+}
+
+.presets-ul {
+    overflow: auto;
+    color: @preset-text-color;
+    max-height: 200px;
+    height: auto;
+    padding: 10px 0 0 10px;
+}
+
+.presets-li {
+    display: block;
+    padding: 5px;
+}
+
+.presets-li-on {
+    &:extend(.presets-li);
+    background-color: darken(@base-background-color, 10%)
+}
+
+.presets-controls-tr {
+    height: 40px;
+}
+
+.presets-btn {
+    height: @cam-controls-width / 3;
+    fill: @nav-text-color;
+}
+
+.presets-btn-off {
+    fill: darken(@nav-text-color, 30%);
+}
+
+.presets-li a {
+    color: @preset-text-color;
+    text-decoration: none;
+}
+

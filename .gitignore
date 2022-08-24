@@ -1,0 +1,14 @@
+**/node_modules
+/client/site/built/*
+/mediaserver/dist
+/server/dist/logs
+/server/dist/data
+/server/dist/saved.cfg
+/server/dist/mediaserver/logs
+/server/dist/static/programdata
+/docs
+/tests
+/assembly
+/point-tasks
+**/localhost.*
+**/*.exe

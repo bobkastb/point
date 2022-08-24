@@ -1,0 +1,10 @@
+/var/log/point-vserial.log {
+	rotate 7
+	daily
+	compress
+	delaycompress
+	copytruncate
+	missingok
+	notifempty
+	size 2M
+}

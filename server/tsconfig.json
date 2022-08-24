@@ -1,0 +1,40 @@
+{
+    "extends" : "../basetscprj.json",
+
+    "compilerOptions": {
+      "target": "es6",
+      "strict": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "lib": [ "es6","dom" ],
+
+      "outDir": "../assembly/tsc",
+      //"outDir": "dist",
+      //"outFile":"dist/index.js",
+      //"rootDirs": ["src", "../genlib" , "../mediaserver/src"],
+      "rootDirs": ["src", "../genlib" ]
+      //"rootDirs": ["src"],
+      //"lib": ["es6","dom"]
+    },
+
+    //"include": ["src/*.ts", "src/lib/*.ts", "src/lib/genlib/*.ts"],
+
+    "include": ["src/*.ts", "src/lib/*.ts", "../genlib/**/*.ts"]
+    //"files":["src/index.ts"],
+    //"include": ["src/**/*.ts","../mediaserver/src/**/*.ts","../client/src/**/*.tsx", "../genlib/lib/*.ts"]
+
+
+    ,"aBuildDirs":{ // special option
+      "@assembly_dir":"${assembly_gendir}"  
+      ,"assembly_remotedir":"${assembly_genremotedir}"
+    }
+    ,"aBuildOptions":{ // special option
+      "--oneFile":"${assembly_dir}/${mainJsFile}"
+      ,"@mainJsFile":"index.js"
+      ,"distFiles":["index.js","@(lib)/**.js"] // add to assembly_dir for not option oneFile
+
+    }  
+
+
+}

@@ -1,0 +1,195 @@
+// Модуль camera.less содержит:
+// Стили для страницы управления камерой ( страница /#camera )
+@import "./const.less";
+
+// Choose camera
+
+.choose-camera-td {
+    height: 100px;
+    padding: 0 @common-padding 0 @common-padding;
+}
+
+.choose-camera-btn {
+    background-color: @nav-background-color;
+    color: @nav-text-color;
+}
+
+.btn-off {
+    background-color: lighten(@nav-background-color, 20%);
+}
+
+// Video
+
+.video-td {
+    padding: 0 @common-padding @common-padding @common-padding;
+    height: 100%;
+}
+
+.video-div {
+    width: 100%;
+    height: 100%;
+    background-color: @nav-background-color;
+}
+
+.camera-video {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    float: right;
+}
+
+
+.panorama-img {
+    width: 100%;
+    height: 100px;
+}
+
+// Video2
+
+.video-div2 {
+    width: 100%;
+    height: 100%;
+    max-width: 1350px;
+    background-color: @nav-background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.camera-video2 {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.panorama-img2 {
+    width: 100%;
+    height: 100px;
+}
+
+// Camera positioning
+
+.camera-pos-td {
+    width: @cam-controls-width;
+    height: @cam-controls-width*1.3;
+    background-color: @nav-background-color;
+    padding: @common-padding;
+}
+
+.camera-pos-table {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.camera-pos-btn-td {
+    min-width: @cam-controls-width / 3;
+    min-height: @cam-controls-width / 3;
+    text-align: center;
+    color: @nav-text-color;
+    font-family: "Glyphter1";
+}
+
+.camera-choose-buttons-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.camera-choose-button-div {
+    margin-right: 20px;
+
+    background-color:  @nav-background-color;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.camera-choose-button-div:hover {
+    cursor: pointer;
+}
+
+.camera-choose-button-div-off {
+    background-color: lighten(@nav-background-color, 20%);
+}
+
+.camera-errors-div {
+    min-width: 25px;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera-not-controlled-sign {
+    height: @cam-controls-width / 4;
+}
+
+.camera-not-visible-sign {
+    height: 50px;
+}
+
+.in-camscreen-errors {
+    display: inline-block;
+    margin-left: 20px;
+    text-align: center;
+
+    color: darken(@nav-text-color, 30%);
+}
+
+.dropdown-menu-div {
+    margin-left: auto;
+    margin-right: @common-padding;
+    position: relative;
+}
+
+.dropdown-menu-btn {
+    border: none;
+}
+
+.dropdown-menu-sign {
+    height: 20px;
+    fill: @nav-text-color;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lighten(@base-background-color, 10%);
+    min-width: @cam-controls-width;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translateX(-(@cam-controls-width - 20px));
+    border: 1px solid @nav-background-color;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.dropdown-menu-div:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-ul {
+    padding: 0;
+}
+
+.dropdown-li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.dropdown-li:hover {
+    cursor: pointer;
+    background-color: @nav-background-color;
+}

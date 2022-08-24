@@ -1,0 +1,33 @@
+{
+
+  "extends" : "../basetscprj.json",
+
+  "compilerOptions": {
+    "target": "es6",
+    "strict": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    //"outDir": "../assembly/tsc",
+    //"rootDirs": ["src", "../genlib" ],
+    "lib": [ "es6","dom" ],
+
+    "outDir": "../assembly/tsc",
+    "rootDirs": ["src", "../genlib"],
+     "allowJs": true
+    },
+
+    "include": ["src/*.ts", "src/lib/*.ts", "../genlib/**/*.ts", "src/genlib/*.ts", "src/ws/*.ts", "src/ws/*.js"]
+
+    ,"aBuildDirs":{ // special option
+      "@assembly_dir":"${assembly_gendir}/mediaserver"  
+      ,"assembly_remotedir":"${assembly_genremotedir}/mediaserver"
+
+    }
+    ,"aBuildOptions":{ // special option
+      "--oneFile":"${assembly_dir}/${mainJsFile}"
+      ,"@mainJsFile":"index.js"
+      ,"distFiles":["index.js","@(lib|ws)/**.js"] // add to assembly_dir for not option oneFile
+    }  
+
+}

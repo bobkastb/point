@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.defaultProfile.windows": "PowerShell"
+		,"terminal.integrated.env.windows": { "path":"${env:PATH};${workspaceFolder}\\build" }
+	}
+	,"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+		]
+	}
+	,"launch":{
+	
+	}
+}

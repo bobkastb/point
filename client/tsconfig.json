@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "esnext",
+      "sourceMap": false,
+      "jsx": "react",
+      "jsxFactory": "ui.h",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "outDir": "site/built/js",
+      //"outDir": "../assembly/client",
+      //"outFile": "../assembly/client/index.js",
+      //"rootDirs": ["src", "../genlib"],
+      "baseUrl": "src",
+      "paths":{
+        "@gen_lib/*" : [ "../../genlib/lib/*" ]
+      },
+
+      "lib": [
+          "es6",
+          "dom"
+      ]
+    },
+
+    
+
+    
+    "include": ["src/**/*", "../genlib/lib/*.ts"],
+    "exclude": ["src/less/**/*"]
+
+    ,"aBuildDirs":{ // special option
+      "@assembly_dir":"${assembly_gendir}/static"  
+      ,"assembly_remotedir":"${assembly_genremotedir}/static"
+    }
+    ,"aBuildOptions":{ // special option
+      "--oneFile":"${assembly_dir}/${mainJsFile}"
+      ,"@mainJsFile":"index.js"
+      ,"distFiles":["built/**"] // add to assembly_dir for not option oneFile
+
+    }  
+
+}

@@ -1,0 +1,59 @@
+// Модуль icon.less содержит:
+// Стили для иконок
+@import "./const.less";
+
+.rotate(@deg: 90) {
+    /* Safari */
+    -webkit-transform: rotate(@deg * 1deg);
+    /* Firefox */
+    -moz-transform: rotate(@deg * 1deg);
+    /* IE10+ */
+    transform: rotate(@deg * 1deg);
+    /* Opera */
+    -o-transform: rotate(@deg * 1deg);
+    /* Internet Explorer */
+    @IEdeg: round(@deg / 90, 0);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@IEdeg);
+}
+
+.arrow-up {
+    .rotate(-90);
+    height: @cam-controls-width / 3;
+    fill: @nav-text-color;
+}
+
+.arrow-right {
+    height: @cam-controls-width / 3;
+    fill: @nav-text-color;
+}
+
+.arrow-down {
+    .rotate(90);
+    height: @cam-controls-width / 3;
+    fill: @nav-text-color;
+}
+
+.arrow-left {
+    .rotate(180);
+    height: @cam-controls-width / 3;
+    fill: @nav-text-color;
+}
+
+.magnify-btn {
+    height: @cam-controls-width / 3;
+    fill: @nav-text-color;
+}
+
+.inactive-move-button {
+    fill: darken(@nav-text-color, 30%);
+}
+
+.error-icon {
+    height: 15px;
+    fill: red;
+}
+
+.warn-icon {
+    height: 15px;
+    fill: blue;
+}

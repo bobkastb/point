@@ -1,0 +1,212 @@
+// Модуль schedule.less содержит:
+// Стили для элементов страницы "Расписание заданий" (страница /#schedule)
+@import "./const.less";
+
+
+.allow-sched-btn {
+    float: center;
+    transform: translateY(-3px);
+}
+
+.sched-top-td {
+    height: 60px;
+    padding: 0 @common-padding 0 @common-padding;
+}
+
+.sched-table-td {
+    padding: 20px 0 20px 0;
+    padding: @common-padding;
+    height: 100%;
+}
+
+.sched-bottom-td {
+    height: 200px;
+    padding: 0 @common-padding 0 @common-padding;
+}
+
+.sched-buttons-td {
+    height: 80px;
+    padding: 0 @common-padding 0 @common-padding;
+}
+
+.sched-table {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    color: @nav-text-color;
+    font-size: 12px;
+}
+
+.sched-table-th {
+    background-color: @nav-background-color;
+    border-bottom: 1px solid @switch-table-border-color;
+}
+
+.sched-table-row-tr {
+    border: none;
+}
+
+.sched-table-row-td {
+    border-left: 1px solid @switch-table-border-color;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sched-table-row-even * {
+    background-color: @row-color-even;
+}
+
+.sched-table-row-odd * {
+    background-color: @row-color-odd;
+}
+
+.sched-table-row-select * {
+    background-color: @row-color-selected;
+}
+
+.sched-table-row-td > * {
+    border: none;
+    color: @body-text-color;
+}
+
+.sched-table-row-td-div > * {
+    border: none;
+    color: @body-text-color;
+}
+
+.sched-button {
+    background-color: @nav-background-color;
+    color: @nav-text-color;
+    fill: @nav-text-color;
+    margin: 0 20px 0 0;
+}
+
+.sched-button-icon {
+    height: 40px;
+ //   fill: @nav-text-color;
+    display: inline-block;
+    margin-right: 10px;
+    transform: translateY(5px);
+}
+
+.sched-button-text {
+    display: inline-block; 
+    transform: translateY(-10px);
+}
+
+.sched-button-disabled {
+    background-color: @nav-background-color;
+    color: darken(@nav-text-color, 30%);
+    fill: darken(@nav-text-color, 30%);
+    margin: 0 20px 0 0;
+}   
+
+.sched-save-del-btn {
+    border: none;
+    height: 25px;
+    fill: @nav-text-color;
+}
+
+.sched-modal-content {
+    background-color: @base-background-color;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 800px;
+    color: @dialog-text-color;
+}
+
+.sched-task-log {
+    color: @dialog-text-color;
+    background-color: @base-background-color;
+    box-sizing: border-box;
+    margin: auto;
+    border: 1px solid #888;
+    width: 100%;
+    height: 260px;
+    resize: none;
+}
+
+.sched-task-records {
+    color: @dialog-text-color;
+    background-color: @base-background-color;
+    box-sizing: border-box;
+    margin: auto;
+    border: 1px solid #888;
+    width: 100%;
+}
+
+.sched-task-button {
+    background-color: @nav-background-color;
+    color: @nav-text-color;
+    margin: 0 20px 0 0;
+    float: right;
+    width: 220px;
+    height: 38px;
+    padding: 5px;
+}
+
+.sched-task-button-icon {
+    height: 25px;
+    fill: @nav-text-color;
+    display: inline-block;
+    margin-right: 5px;
+    transform: translateY(2px);
+}
+
+.sched-task-button-text {
+    display: inline-block; 
+    transform: translateY(-6px);
+}
+
+//TODO: this is stupid way. Use table inside SchedPropDialog instead
+.sched-task-button-shift {
+    margin: 0 36px 0 0;
+}
+
+.sched-table-tmspan {
+    border: none;
+    color: @body-text-color;
+}
+
+.sched-table-row-mark-td {
+    border-left: 1px solid @switch-table-border-color;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sched-edit-table-td {
+    border: none;
+    padding: 15px 10px 15px 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sched-edit-div > * {
+    border: none;
+    color: @body-text-color;
+    background-color: @base-background-color;
+}
+
+.sched-edit-item {
+    border: none;
+    color: @body-text-color;
+    background-color: @base-background-color;
+}
+
+.sched-panel-header {
+    color: @body-text-color;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sched-button-inv-icon {
+    height: 25px;
+    fill: @base-background-color;
+    display: inline-block;
+    margin-right: 5px;
+    transform: translateY(2px);
+}

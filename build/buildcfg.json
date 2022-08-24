@@ -1,0 +1,27 @@
+{
+    "aBuildDirs":{
+        "@assembly_gendir":"${SolutionDir}/assembly/dist"
+        ,"@assembly_genremotedir":"\\\\${solution_remote_server}/c$/opt/stelcs/PO-Int/"
+    }
+    ,"default_env":{
+        "solution_remote_server":"rnd"
+        ,"pe_build_Only":"true"
+    }
+    ,"remoteservers":{
+        "idx":{}
+        ,"list":[
+            { "addr":"10.1.0.68" , "names":["rnd","68"] }
+        ]    
+    }
+
+    ,"aBuildOptions":{
+        "--oneFile":"index.js"
+
+        ,"allowRemoteCopy":"-all"
+
+        ,"cmd_options" : {"log":true , "throwError":true}
+        ,"verbose":0
+        ,"verbose_copyfilesres":"-each"
+    }  
+  
+}
